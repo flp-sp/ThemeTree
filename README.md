@@ -32,25 +32,31 @@ RF06 | Ver agenda | Controi a agenta com as tarefas ativas | Alta
 RF07 | Criar tarefa | Criar uma nova tarefa | Alta
 RF08 | Editar tarefa | Editar uma tarefa existente | Alta
 RF09 | Listar projetos | Listar os projetos criados | Alta
-RF10 | Editar projetos | Editar os projetos existentes | Alta
-RF11 | Mostar TODO | Mostrar modulo com as tarefas do dia | Alta 
-RF12 | Construir gráficos | Calcular métricas e apresentar graficos com estatisticas | Média
-RF13 | Anexar arquivos | Fazer envio e armazenar arquivos | Média
-RF14 | Criar roadmaps | Criar um novo caminho de aprendizado | Alta      
+RF10 | Integrar GitHub | Pegar informações do repositório do projeto | Alta
+RF11 | Editar projetos | Editar os projetos existentes | Alta
+RF12 | Mostar TODO | Mostrar modulo com as tarefas do dia | Alta 
+RF13 | Construir gráficos | Calcular métricas e apresentar graficos com estatisticas | Média
+RF14 | Anexar arquivos | Fazer envio e armazenar arquivos | Média
+RF15 | Criar roadmaps | Criar um novo caminho de aprendizado | Alta      
 
 
 #### 2. Requisitos não Funcionais  
 ID | Nome | Descrição | Prioridade  
 -|-|-|-  
-RNF00 | None | None | None  
 RNF01 | Plataforma | O software deve ser web | Alta
 RNF02 | Compatibilidade | Tem que ser nativo de desktop e compatível com celulares | Média
-RNF03 | Dados | Deve-se usar mySql para guardar dados, arquivos ficarão armazenados em diretórios | Alta
+RNF03 | Dados | Deve-se usar MySql para guardar dados, arquivos ficarão armazenados em diretórios | Alta
+RNF04 | Backend | O backend vai ser escrito em Python com o framework Flask | Alta
+RNF05 | UI | A interface será feita com HTML5 e CSS3 | Alta
+RNF06 | Criptografia | Senhas devem ser criptografadas com hash | Alta
+
 
 #### 3. Regras de Negócio
 ID | Nome | Descrição | RF  
 -|-|-|-  
-RN00 | None | None | None  
+RN01 | Quantidade de modulos | Um tema tem que ter no mínimo 1 módulo | RF03  
+RN02 | Exibição GitHub | Detalhes do projeto só aparecerão em repositórios públicos | RF10
+
 
 ### 4. Modelagem UML
 
