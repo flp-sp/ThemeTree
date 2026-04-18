@@ -7,12 +7,13 @@ Aluno: Francisco Felipe Sampaio Neto
 Versão | Data | Descrição | Autor
 -| - | - | -
 0.1.0-alpha | 15/04/2026 | Criação do esqueleto da documentação | Francisco Felipe
+0.1.1-alpha | 15/04/2026 | Esboço dos diagramas da modelagem UML | Francisco Felipe
 
 ### 2. Introdução
-#### 1. Objetivo  
+#### 2.1. Objetivo  
 Este documento descreve os requisitos funcionais e não funcionais, bem como a modelagem UML (Casos de Uso e Classes) para o sistema ThemeTree.
 
-#### 2. Escopo  
+#### 2.2. Escopo  
 O projeto é um software de código aberto para organizar tarefas de forma mais simples e eficiente quando comparado com seus concorrentes.  
 
 Como o nome sugere, ele foi pensado como uma Árvore de Temas, esses temas são contextos específicos com módulos dentro da aplicação.  
@@ -20,7 +21,7 @@ Como o nome sugere, ele foi pensado como uma Árvore de Temas, esses temas são 
 Ele foca principalmente em projetos de desenvolvimento de software contando com estruturas padrão para engenheiros de software além de integrações com o GitHub.
 
 ### 3. Levantamento de requisitos
-#### 1. Requisitos funcionais  
+#### 3.1. Requisitos funcionais  
 ID | Nome | Descrição | Prioridade  
 -|-|-|-   
 RF01 | Cadastrar | Realizar cadastro de um novo usuário | Media
@@ -40,7 +41,7 @@ RF14 | Anexar arquivos | Fazer envio e armazenar arquivos | Média
 RF15 | Criar roadmaps | Criar um novo caminho de aprendizado | Alta      
 
 
-#### 2. Requisitos não Funcionais  
+#### 3.2. Requisitos não Funcionais  
 ID | Nome | Descrição | Prioridade  
 -|-|-|-  
 RNF01 | Plataforma | O software deve ser web | Alta
@@ -51,7 +52,7 @@ RNF05 | UI | A interface será feita com HTML5 e CSS3 | Alta
 RNF06 | Criptografia | Senhas devem ser criptografadas com hash | Alta
 
 
-#### 3. Regras de Negócio
+#### 3.3. Regras de Negócio
 ID | Nome | Descrição | RF  
 -|-|-|-  
 RN01 | Quantidade de modulos | Um tema tem que ter no mínimo 1 módulo | RF03  
@@ -59,8 +60,28 @@ RN02 | Exibição GitHub | Detalhes do projeto só aparecerão em repositórios 
 
 
 ### 4. Modelagem UML
+#### 4.1 Diagrama de Caso de Uso - [CONSERTAR]  
+!["diagrama de caso de uso"](./src/images/caso-de-uso.png)
+
+Detalhamento de Caso de Uso Principal   
+Atores: Usuário 
+Pré-condição: Conta de usuário criada.
+Fluxo Principal:
+1. O usuário auntentica com suas credenciais.
+2. O usuário seleciona um tema para trabalhar.
+3. O usuário cria uma nova tarefa.
+4. O usuário pode consultar as tarefas criadas.  
+Pós-condição: Tarefas são armazenadas no sistema.
+
+#### 4.2 Diagrama de Classes [INCOMPLETO]
+!["diagramas de classes](./src/images/diagrama-classes.png)
 
 ### 5. Dicionário de Dados
+Classe | Atributo | Descrição  
+-|-|-  
+Usuário | nome_usuario | Nome do usuário
+...
+
 
 ### 6. Prototipação de Telas
 
