@@ -1,5 +1,5 @@
 # Documento de Especificação de Requisitos e Modelagem (DERM)
-Projeto: ThemeTree Versão: 0.1.0-alpha Data: 15 de Abril de 2026  
+Projeto: ThemeTree Versão: 0.2.0-alpha Data: 15 de Abril de 2026  
 Aluno: Francisco Felipe Sampaio Neto 
 ---
 1. Histórico de Revisões
@@ -8,7 +8,8 @@ Versão | Data | Descrição | Autor
 -| - | - | -
 0.1.0-alpha | 15/04/2026 | Criação do esqueleto da documentação | Francisco Felipe
 0.1.1-alpha | 18/04/2026 | Esboço dos diagramas da modelagem UML | Francisco Felipe
-0.1.2-alpha | 19/04/2026 | Finalizado os diagramas UML e feito o dicionário de dados e criar protótipos
+0.1.2-alpha | 19/04/2026 | Finalizado os diagramas UML e feito o dicionário de dados e criar protótipos | Francisco Felipe
+0.2.0-alpha | 20/04/2026 | Documentação finalizada | Francisco Felipe
 
 ### 2. Introdução
 #### 2.1. Objetivo  
@@ -58,6 +59,7 @@ ID | Nome | Descrição | RF
 -|-|-|-  
 RN01 | Quantidade de modulos | Um tema tem que ter no mínimo 1 módulo | RF03  
 RN02 | Exibição GitHub | Detalhes do projeto só aparecerão em repositórios públicos | RF10
+RN03 | Licença | O projeto vai ser de código aberto, para ser hospedado localmente pelo usuário e conta com a licença MIT.
 
 
 ### 4. Modelagem UML
@@ -65,16 +67,17 @@ RN02 | Exibição GitHub | Detalhes do projeto só aparecerão em repositórios 
 !["diagrama de caso de uso"](./src/images/diagramas/caso-de-uso.png)
 
 Detalhamento de Caso de Uso Principal   
-Atores: Usuário 
-Pré-condição: Conta de usuário criada.
+Atores: Usuário  
+Pré-condição: Conta de usuário criada.  
 Fluxo Principal:
 1. O usuário auntentica com suas credenciais.
 2. O usuário seleciona um tema para trabalhar.
 3. O usuário cria uma nova tarefa.
 4. O usuário pode consultar as tarefas criadas.  
+
 Pós-condição: Tarefas são armazenadas no sistema.
 
-#### 4.2 Diagrama de Classes - [TEORICAMENTE FEITO]
+#### 4.2 Diagrama de Classes
 !["diagramas de classes](./src/images/diagramas/diagrama-classes.png)
 
 ### 5. Dicionário de Dados
@@ -106,11 +109,28 @@ Cores Principais: Tons de verde[`#0b9b69`, `#337b52`], cinza[`#383939`] e branco
 Tipografia: Montserrat  
 Ferramenta utilizada: Canva  
 #### 6.2 Protótipos de Média Fidelidade
-!["tela de login"](src/images/prototipos/login.png)
+!["tela de login"](src/images/prototipos/login.png)  
+#### Tela de login: Interface para autenticar usuários com os campos de nome e senha. Atende ao requisito RF02.
+---
 !["tela de signin"](src/images/prototipos/signin.png)
+#### Tela de signin: Interface para criar um novo usuário para o sistema, com os mesmos campos do login, nome e senha. Atende ao requisito RF01.
+---
 !["tela de menu"](src/images/prototipos/menu.png)
+#### Tela do menu: Interface disponível até o momento em que o usuário selecionar algum tema. Atende ao requisito RF05.
+---
 !["tela de novo tema"](src/images/prototipos/novo-tema.png)
+#### Tela de criação de novo tema: Interface para a criação de novos temas, aparece ao clicar no botão `Novo Tema`, a tela possui os campos de nome do tema e os módulos que o usuário quer nesse tema. Atende ao requisito RF03.
+---
 !["tela de nova tarefa"](src/images/prototipos/nova-tarefa.png)
+#### Tela de criação de nova tarefa: Interface para a criação de novas tarefas, aparece ao clicar no botão `Nova Tarefa`, a tela possui os campos de nome da tarefa, descrição, tipo, data(s) e caso esteja associado a um projeto, o nome do tema e do projeto. Atende ao requisito RF07.
+---
 !["tela de projetos"](src/images/prototipos/projetos.png)
+#### Tela do módulo projetos: Interface que demonstra como serão os modulos, no caso, o módulo projetos, que conta com os projetos criados pelo usuário, cada um contendo link do repositório, tasks para o projeto e descrição do projeto. Atende ao requisito RF09.
 
-### 7. Conclusão e Justificativa Técnica
+### 7. Conclusão e Justificativa Técnica - [FRACO]
+Para a modelagem foi usado o diagrama de caso de uso e o diagrama de classes.  
+O diagrama de caso de uso foi usado para apresentar todo o fluxo principal do usuário, passando pelas principais formas de uso do usuário.  
+O diagrama de classes serve para mostrar as principais classes do sistema, mostra a dependencia dos modulos aos temas e a relação de multiplicidade entre as classes.
+
+### 8. Video
+!["video]()
