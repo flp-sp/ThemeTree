@@ -1,6 +1,5 @@
 # Documento de Especificação de Requisitos e Modelagem (DERM)
-Projeto: ThemeTree Versão: 0.2.0-alpha Data: 15 de Abril de 2026  
-Aluno: Francisco Felipe Sampaio Neto 
+Projeto: ThemeTree Versão: 0.2.0-alpha Data: 15 de Abril de 2026 Aluno: Francisco Felipe Sampaio Neto 
 ---
 1. Histórico de Revisões
 
@@ -10,6 +9,7 @@ Versão | Data | Descrição | Autor
 0.1.1-alpha | 18/04/2026 | Esboço dos diagramas da modelagem UML | Francisco Felipe
 0.1.2-alpha | 19/04/2026 | Finalizado os diagramas UML e feito o dicionário de dados e criar protótipos | Francisco Felipe
 0.2.0-alpha | 20/04/2026 | Documentação finalizada | Francisco Felipe
+0.2.1-alpha | 26/04/2026 | Video adicionado | Francisco Felipe
 
 ### 2. Introdução
 #### 2.1. Objetivo  
@@ -52,6 +52,7 @@ RNF03 | Dados | Deve-se usar MySql para guardar dados, arquivos ficarão armazen
 RNF04 | Backend | O backend vai ser escrito em Python com o framework Flask | Alta
 RNF05 | UI | A interface será feita com HTML5 e CSS3 | Alta
 RNF06 | Criptografia | Senhas devem ser criptografadas com hash | Alta
+RNF06 | Armazenamento | Arqivos serão anexados no modulo de roadmaps | Baixa
 
 
 #### 3.3. Regras de Negócio
@@ -127,10 +128,12 @@ Ferramenta utilizada: Canva
 !["tela de projetos"](src/images/prototipos/projetos.png)
 #### Tela do módulo projetos: Interface que demonstra como serão os modulos, no caso, o módulo projetos, que conta com os projetos criados pelo usuário, cada um contendo link do repositório, tasks para o projeto e descrição do projeto. Atende ao requisito RF09.
 
-### 7. Conclusão e Justificativa Técnica - [FRACO]
+### 7. Conclusão e Justificativa Técnica
 Para a modelagem foi usado o diagrama de caso de uso e o diagrama de classes.  
 O diagrama de caso de uso foi usado para apresentar todo o fluxo principal do usuário, passando pelas principais formas de uso do usuário.  
 O diagrama de classes serve para mostrar as principais classes do sistema, mostra a dependencia dos modulos aos temas e a relação de multiplicidade entre as classes.
 
 ### 8. Video
-!["video]()
+[Assistir vídeo no Google Drive](https://drive.google.com/file/d/1DJRSZJ4G8ZvI24LasP8M85FoAHtqU3Js/view)
+
+Caso o link não esteja funcionando, você também pode baixar o vídeo no repositório em `./src/videos/diagrama-classes.mp4`.
